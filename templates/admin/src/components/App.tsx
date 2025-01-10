@@ -16,6 +16,7 @@ import { ToastContainer } from 'react-toastify';
 import { Logger } from 'simple-logging-system';
 import Login from './features/login/Login';
 import GlobalErrorBoundary from './theme/GlobalErrorBoundary';
+import SecurityBanner from './features/security/SecurityBanner';
 
 const logger: Logger = new Logger('App');
 // To make the application have a base path that starts with /admin:
@@ -41,6 +42,7 @@ export default function App() {
       element: (
         <PrivateRoute>
           <Layout>
+            <SecurityBanner />
             <Outlet />
           </Layout>
         </PrivateRoute>
