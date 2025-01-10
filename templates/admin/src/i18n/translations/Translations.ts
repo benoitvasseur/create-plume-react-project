@@ -102,7 +102,7 @@ export type Translations = {
       empty_field: string,
     },
     security: {
-      fingerprint_missing: string
+      fingerprint_missing: string,
     },
   },
   'http-errors': {
